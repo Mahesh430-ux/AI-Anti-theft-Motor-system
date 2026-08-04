@@ -1,4 +1,4 @@
-* Day 10 - YOLOv8 AI Detection Setup for Smart Motor Security System
+* Day 1 - YOLOv8 AI Detection Setup for Smart Motor Security System
 * ✅ Completed Today :- 
 Implemented the AI object detection module using YOLOv8
 
