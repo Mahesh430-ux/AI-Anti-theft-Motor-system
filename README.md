@@ -43,3 +43,28 @@ Today's focus was on improving the real-time object detection pipeline and fixin
 
 Every debugging session is bringing the project one step closer to a reliable AI-powered theft detection system. 🚀
 
+Day 3 :- 
+Today's Achievements
+Integrated the YOLOv8 Nano pre-trained model successfully.
+Fixed model loading and webcam initialization issues.
+Built a real-time object detection pipeline using OpenCV and YOLOv8.
+Added live detection with bounding boxes, class labels, and confidence scores.
+Implemented a configurable Motor Protection Zone on the camera feed.
+Optimized the detection workflow by improving confidence thresholds and debugging false detections.
+Cleaned up the project structure and organized modules for future scalability.
+Started implementing the Motor Zone Intrusion Detection logic, which will trigger alerts when a person enters the protected area.
+
+
+🛠️ Tech Stack :- 
+Python
+OpenCV
+Ultralytics YOLOv8
+NumPy
+
+📌 Next Milestone :- 
+Detect when a person enters the Motor Protection Zone.
+Trigger a police siren automatically.
+Capture intrusion images.
+Record evidence videos.
+Store alerts in SQLite.
+Build a Flask dashboard for monitoring and alert history
