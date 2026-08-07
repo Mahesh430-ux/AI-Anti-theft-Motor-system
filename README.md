@@ -68,3 +68,106 @@ Capture intrusion images.
 Record evidence videos.
 Store alerts in SQLite.
 Build a Flask dashboard for monitoring and alert history
+
+
+
+# 🚨 AI Motor Security System - Daily Progress Update
+## 📅 Day 4 - August 7, 2026
+
+Today I continued improving the **AI-based Motor Security and Theft Detection System** using **YOLOv8 and OpenCV**.
+
+* 🔧 Work Completed Today
+
+* Improved the **human detection system** using YOLOv8.
+* Worked on improving the detection area around the motor.
+* Added/adjusted the **motor security zone** using predefined coordinates.
+* Implemented object-center calculation using the detected bounding box.
+* Improved the logic for checking whether a detected person enters the protected motor zone.
+* Worked on reducing incorrect detections and ensuring that only relevant **person detections** trigger the security logic.
+* Continued testing the system using the webcam/camera feed.
+* Improved the visual detection output with bounding boxes and labels.
+* Continued debugging the camera and YOLOv8 detection pipeline.
+
+* 🧠 Detection Logic
+
+The system calculates the center point of a detected object:
+
+```python
+center_x = (x1 + x2) // 2
+center_y = (y1 + y2) // 2
+```
+
+This center point is then checked against the predefined protected motor area:
+
+```python
+zone_x1 = 150
+zone_y1 = 250
+zone_x2 = 500
+zone_y2 = 450
+```
+
+The basic idea is:
+
+```text
+Camera Feed
+     ↓
+YOLOv8 Detection
+     ↓
+Detect Person
+     ↓
+Calculate Bounding Box Center
+     ↓
+Check Motor Security Zone
+     ↓
+Person Inside Zone?
+     ↓
+🚨 Security Alert
+```
+
+* 🛠️ Technologies Used
+
+* Python
+* OpenCV
+* YOLOv8
+* Ultralytics
+* Computer Vision
+* Object Detection
+
+* 🎯 Project Goal
+
+The goal of this project is to build an **AI-powered security system for protecting a motor from theft**.
+
+The system will eventually:
+
+1. Monitor the motor area using cameras.
+2. Detect humans approaching the protected area.
+3. Determine whether the person enters the motor security zone.
+4. Capture evidence of suspicious activity.
+5. Trigger an alarm/siren.
+6. Store security events.
+7. Send notifications when suspicious activity is detected.
+
+* 📌 Current Status
+
+**YOLOv8 person detection + motor security zone detection is under development and testing.**
+
+Next steps will focus on:-
+* 🚨 Automatic siren activation
+* 📸 Automatic image capture
+* 🎥 Video recording of suspicious activity
+* 📱 Security notifications
+* 🗄️ Event history/database
+* 🌙 Better night-time detection
+* 📷 Multi-camera support
+
+---
+
+🚀*  Progress :- 
+**AI Detection → ████████░░ 80%**
+
+**Security Automation → ██████░░░░ 60%**
+
+**Overall Project → ██████░░░░ 65%**
+
+Continuing to build the system step by step toward a complete **AI-powered anti-theft motor security solution**.
+
